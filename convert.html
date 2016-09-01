@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Metric converter</title>
+    <link rel="stylesheet" type="text/css" href="convert_style.css"/>
+  </head>
+  <body>
+      <noscript>
+        <prompt>You need JavaScript to run this site</prompt>
+      </noscript>
+      <div id="converter">
+        <script>
+          var distance;
+          distance = prompt("Input length in metres")
+          var Km = distance/1000
+          var Mm = distance/1000000
+          var Gm = distance/1000000000
+          var cm = distance * 100
+          var mm = distance * 1000
+          var um = distance * 1000000
+          var mile = distance/1609.344
+          var foot = distance * 3.2808
+          var inch = distance * 39.3701
+          document.write(Km + " Km    --    kilometres" + "<br>" + "<br>")
+          document.write(Mm + " Mm    --    megametres" + "<br>" + "<br>")
+          document.write(Gm + " Gm    --    gigametres" + "<br>" + "<br>")
+          document.write(cm + " cm    --    centimetres" + "<br>" + "<br>")
+          document.write(mm + " mm    --    millimetres" + "<br>" + "<br>")
+          document.write(um + " um    --    micrometres" + "<br>" + "<br>")
+          document.write(mile + " mile" + "<br>" + "<br>")
+          document.write(foot + " foot" + "<br>" + "<br>")
+          document.write(inch + " inch" + "<br>")
+        </script>
+      </div>
+      <ul style="font-size:30;">
+				<li>Copyright &copy; 2016 Minkisoft</li>
+			</ul>
+      <div id="hint">
+        <h1>Refresh the page to use the converter again</h1>
+      </div>
+  </body>
+</html>

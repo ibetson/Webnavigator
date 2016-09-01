@@ -1,0 +1,57 @@
+#page {
+	background-color: #E6EBE4;
+	font: arial;
+	width=800px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: verdana, sans-serif;
+}
+
+#title {
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
+#main1 {
+	background-color: #E9FFFF;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-size: 50;
+
+}
+
+#top {
+	clear: both;
+	float: left;
+	font-size: 32;
+}
+
+#pic {
+	float: left;
+
+}
+
+#javascript {
+	float: left;
+	size: 32;
+	color: red;
+}
+
+#main2 {
+	background-color: #3EFC02;
+	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+
+}
+
+#about {
+	clear: both;
+	float: right;
+	text-align: center;
+	font-size: 24;
+}

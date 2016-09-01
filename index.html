@@ -1,0 +1,123 @@
+<html>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website.","dismiss":"Got it!","learnMore":"More info","link":"http://192.168.0.7/cookie_policy.html","theme":"dark-floating"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+	<head>
+		<title>WebNavigator</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div id="page">
+			<div id="title">
+				<h1>WebNavigator</h1>
+			</div>
+			<div id="main1">
+				<div id="top">
+					<h3>Top sites</h2>
+					<ul>
+						<li><a target="_blank" href="https://www.amazon.co.uk/">Amazon</a></li>
+						<li><a target="_blank" href="https://www.google.co.uk/">Google</a></li>
+						<li><a target="_blank" href="https://www.youtube.com/?gl=GB/">YouTube</a></li>
+						<li><a target="_blank" href="https://www.theguardian.com/uk/">Guardian</a></li>
+						<li><a target="_blank" href="https://fronter.com/hillingdon/">Fronter</a></li>
+						<li><a target="_blank" href="http://www.bishopramseyschool.org/">Bishop Ramsey</a></li>
+						<li><a target="_blank" href="http://www.johnlewis.com/">John Lewis</a></li>
+						<li><a target="_blank" href="http://dictionary.cambridge.org/">Cambridge dictionary</a></li>
+						<li><a target="_blank" href="http://apod.nasa.gov/apod/astropix.html">NASA pic of the day</a></li>
+					</ul>
+				</div>
+		<div id="javascript">
+			<script language="javascript" type="text/javascript">
+				function setCookie(cname, cvalue, exdays) {
+			    var d = new Date();
+			    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			    var expires = "expires="+ d.toUTCString();
+			    document.cookie = cname + "=" + cvalue + "; " + expires;
+			  }
+				function getCookie(cname) {
+			    var name = cname + "=";
+			    var ca = document.cookie.split(';');
+			    for(var i = 0; i <ca.length; i++) {
+			        var c = ca[i];
+			        while (c.charAt(0)==' ') {
+			            c = c.substring(1);
+			         }
+			        if (c.indexOf(name) == 0) {
+			            return c.substring(name.length,c.length);
+			        }
+			    }
+			    return "";
+		 	  }
+				function checkCookie() {
+			    var user=getCookie("username");
+			    if (user!="") {
+			      document.write("Welcome " + user);
+			    } else {
+			        user = prompt("Please enter your name:", "");
+			        if (user != "" && user != null) {
+			            setCookie("username", user, 365);
+			        }
+			    }
+			  }
+				function close_tab() {
+				window.open('', '_self', ''); window.close();
+			  }
+				checkCookie()
+				function time() {
+					var timex = new Date()
+					alert(timex)
+				}
+				function feedback() {
+					var url_link = "https://forms.office.com/Pages/ResponsePage.aspx?id=6AkmO70O20CrT15pR4X43tb3xmW_cmpBkzcHOOPKxr5URVg5NlJITVQxWTVYM1I3VlQ4VUNMR01MSS4u";
+					window.open(url_link,'height=200,width=400,scrollbars=yes');
+				}
+				function news() {
+					window.open("http://www.bbc.co.uk/news");
+				}
+				function weather() {
+					window.open("http://www.bbc.co.uk/weather/ha4");
+				}
+			</script>
+			<noscript>
+				<prompt>This site requires Javascript for full function</prompt>
+			</noscript>
+			<br><table>
+				<tr>
+					<td><a href="ABOUT.docx"><button style="color:green;border-radius:10px;font-size:35;">About website</button></a></td>
+					<td><button style="color:blue;border-radius:10px;font-size:35;" onclick=close_tab()>Close</button></td>
+					<td><button style="color:red;border-radius:10px;font-size:35;" onclick=time()>Time</button></td>
+				</tr>
+				<tr>
+					<td><button style="color:#610B21;border-radius:10px;font-size:35;" onclick=feedback()>Feedback form</button></td>
+					<td><button style="color:black;border-radius:10px;font-size:35;" onclick=news()>News</button></td>
+					<td><button style="color:#61380B;border-radius:10px;font-size:35;" onclick=weather()>Weather</button></td><br><br>
+			  </tr>
+			</table>
+		</div>
+				<div id="pic">
+					<br><img src="logo.png"/><br><br>
+          <a target="_blank" href="convert.html"><button style="color:#0B0B61;border-radius:10px;font-size:35;">Metric converter</button></a><br><br>
+          <a target = "_blank" href="email.html"><button style="color:#E4A0F4;border-radius:10px;font-size:35;" onclick=change_name()>Webmail</button></a></td><br><br>
+					<br><marquee behavior="scroll" bgcolor="yellow" loop="-10" width="100%">
+					   <i>
+						  <font color="blue">
+							Check out our new Email service! Latest version: v1.5. Press 'About website' for details. COOKIES AREN'T EVIL!
+						  </font>
+						  <span id="time"/>
+					   </i>
+					</marquee>
+				</div>
+			</div>
+			<div id="main2">
+				<div id="about">
+					<h4 style="font-size:30;">About</h4>
+					<p>WebNavigator was programmed using a mixture of HTML, CSS and JavaScript. It is designed to help people browse the vast expanse of the internet quicker!</p><br>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
